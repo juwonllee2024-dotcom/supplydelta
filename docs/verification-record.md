@@ -1,7 +1,7 @@
 # Verification record
 
 **Release target:** `v0.1.0`  
-**Recorded:** 2026-10-08
+**Recorded:** 2026-10-09
 
 This file is updated only from fresh command output before release.
 
@@ -19,7 +19,7 @@ This file is updated only from fresh command output before release.
 | clean `--fail-on any-change` gate | PASS — exit code `0` for identical artifacts |
 | `npm audit --audit-level=high` | PASS — 0 vulnerabilities |
 | secret-pattern scan with `rg` | PASS — no matches |
-| `git diff --check` | pending staged final run |
+| `git diff --check` | PASS — staged tree clean |
 
 ## Recorded smoke input
 
@@ -30,5 +30,6 @@ The final smoke test compares `test/fixtures/old-package` with `test/fixtures/ne
 - No claim of malware detection or complete behavior analysis.
 - Registry download convenience is intentionally not part of v0.1.0; callers can create artifacts with `npm pack --ignore-scripts`.
 - On this Windows host, `npm pack --ignore-scripts` terminated with exit `-1073741502` before producing an artifact. The archive smoke used Node's `tar` API instead; no package lifecycle script ran. This is a host/npm issue, not a SupplyDelta result.
-- GitHub Actions and release URLs are recorded after remote publication.
+- GitHub Actions: [CI run 37866748000](https://github.com/juwonllee2024-dotcom/supplydelta/actions/runs/37866748000) — success.
+- Release: [v0.1.0](https://github.com/juwonllee2024-dotcom/supplydelta/releases/tag/v0.1.0), source archive SHA-256 `c979a409bf287da1967109ab7fdc549a9b2d15ae733916dfa34acf90161f3587`.
 

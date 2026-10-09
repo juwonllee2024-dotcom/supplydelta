@@ -1,4 +1,4 @@
-# Founder report — 2026-10-08
+# Founder report — 2026-10-09
 
 - **오늘의 문제:** npm dependency update를 버전·lockfile만 보고 승인하면 install-time lifecycle hook 변화가 눈에 묻힌다.
 - **첫 사용자:** JavaScript maintainer와 AI가 제안한 dependency를 검토하는 개발자.
@@ -12,6 +12,6 @@
 - **아직 검증되지 않은 가설:** maintainer가 trust-surface delta를 반복 사용하고 `--fail-on`을 CI에 유지할지는 사용자 실험이 필요하다.
 - **오늘의 희망 근거:** 결과가 눈에 보이는 before/after 카드이고, 실행하지 않는 read-only boundary라 첫 사용 장벽이 낮다.
 - **내일의 단 하나의 실험:** JavaScript maintainer 5명에게 fixture diff를 보내 “승인/보류 판단이 바뀌었는가?”를 묻는다.
-- **GitHub 공개 URL:** pending until remote publication.
-- **commit·CI·release 결과:** pending final verification.
+- **GitHub 공개 URL:** https://github.com/juwonllee2024-dotcom/supplydelta
+- **commit·CI·release 결과:** commit `9327de766bfa40915d624ecc86d2502997c82d5a`; [CI 성공](https://github.com/juwonllee2024-dotcom/supplydelta/actions/runs/37866748000); [v0.1.0 공개](https://github.com/juwonllee2024-dotcom/supplydelta/releases/tag/v0.1.0); source archive SHA-256 `c979a409bf287da1967109ab7fdc549a9b2d15ae733916dfa34acf90161f3587`.
 
